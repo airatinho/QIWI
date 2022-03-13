@@ -2,7 +2,7 @@
 import time
 from random import randint
 
-dance_music=['хип-хоп','rnb','electrohouse','house','pop-music']
+dance_music=['electrohouse','rnb','pop-music']
 class Person:
     """Типаж людей"""
 
@@ -63,7 +63,7 @@ class NightClub:
                 self.__visitors[f'Посетитель_{i+1}']=Person()
             print(len(self.__visitors))
         else:
-            print(len(self.__visitors))
+            print(f'Количество посетителей {len(self.__visitors)}')
         for d in range(self.__duration):
             self.__current_music= self.__music[randint(0,len(self.__music)-1)]
             print(f"В клубе играет музыка {self.__current_music}")
