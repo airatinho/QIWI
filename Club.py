@@ -79,6 +79,8 @@ class NightClub:
 
 if __name__ == '__main__':
     morozko=NightClub()
+
+    #можно закоментить следующие три строчки
     morozko.custom_visitors={'вася':Person(gender='мальчик'),
                              'Роза':Person(gender='девочка'),
                              'Саша':Person(gender='не определился')}
